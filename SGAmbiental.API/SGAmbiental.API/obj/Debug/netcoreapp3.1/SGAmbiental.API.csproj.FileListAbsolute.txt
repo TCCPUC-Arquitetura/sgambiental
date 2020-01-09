@@ -1,0 +1,17 @@
+C:\TCC-PUC\sgambiental\SGAmbiental.API\SGAmbiental.API\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\TCC-PUC\sgambiental\SGAmbiental.API\SGAmbiental.API\bin\Debug\netcoreapp3.1\appsettings.json
+C:\TCC-PUC\sgambiental\SGAmbiental.API\SGAmbiental.API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\TCC-PUC\sgambiental\SGAmbiental.API\SGAmbiental.API\bin\Debug\netcoreapp3.1\SGAmbiental.API.exe
+C:\TCC-PUC\sgambiental\SGAmbiental.API\SGAmbiental.API\bin\Debug\netcoreapp3.1\SGAmbiental.API.deps.json
+C:\TCC-PUC\sgambiental\SGAmbiental.API\SGAmbiental.API\bin\Debug\netcoreapp3.1\SGAmbiental.API.runtimeconfig.json
+C:\TCC-PUC\sgambiental\SGAmbiental.API\SGAmbiental.API\bin\Debug\netcoreapp3.1\SGAmbiental.API.runtimeconfig.dev.json
+C:\TCC-PUC\sgambiental\SGAmbiental.API\SGAmbiental.API\bin\Debug\netcoreapp3.1\SGAmbiental.API.dll
+C:\TCC-PUC\sgambiental\SGAmbiental.API\SGAmbiental.API\bin\Debug\netcoreapp3.1\SGAmbiental.API.pdb
+C:\TCC-PUC\sgambiental\SGAmbiental.API\SGAmbiental.API\obj\Debug\netcoreapp3.1\staticwebassets\SGAmbiental.API.StaticWebAssets.Manifest.cache
+C:\TCC-PUC\sgambiental\SGAmbiental.API\SGAmbiental.API\obj\Debug\netcoreapp3.1\staticwebassets\SGAmbiental.API.StaticWebAssets.xml
+C:\TCC-PUC\sgambiental\SGAmbiental.API\SGAmbiental.API\obj\Debug\netcoreapp3.1\SGAmbiental.API.MvcApplicationPartsAssemblyInfo.cache
+C:\TCC-PUC\sgambiental\SGAmbiental.API\SGAmbiental.API\obj\Debug\netcoreapp3.1\SGAmbiental.API.AssemblyInfoInputs.cache
+C:\TCC-PUC\sgambiental\SGAmbiental.API\SGAmbiental.API\obj\Debug\netcoreapp3.1\SGAmbiental.API.AssemblyInfo.cs
+C:\TCC-PUC\sgambiental\SGAmbiental.API\SGAmbiental.API\obj\Debug\netcoreapp3.1\SGAmbiental.API.RazorTargetAssemblyInfo.cache
+C:\TCC-PUC\sgambiental\SGAmbiental.API\SGAmbiental.API\obj\Debug\netcoreapp3.1\SGAmbiental.API.dll
+C:\TCC-PUC\sgambiental\SGAmbiental.API\SGAmbiental.API\obj\Debug\netcoreapp3.1\SGAmbiental.API.pdb
