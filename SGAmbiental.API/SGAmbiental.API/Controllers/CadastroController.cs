@@ -14,7 +14,7 @@ namespace SGAmbiental.API.Controllers
     {
         private static readonly string[] Nome = new[]
         {
-            "Vale", "Usiminas", "Gerdau"
+            "Vale", "Usiminas", "Gerdau", "Teste"
         };
 
         private readonly ILogger<CadastroController> _logger;
