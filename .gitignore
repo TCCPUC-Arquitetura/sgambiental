@@ -1,5 +1,21 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+﻿# Created by https://www.gitignore.io/api/dotnetcore
+# Edit at https://www.gitignore.io/?templates=dotnetcore
 
-/SGAAmbiental.API/.vs/SGAAmbiental.API/v16/Server/sqlite3
+### DotnetCore ###
+# .NET Core build folders
+/bin
+/obj
+/.vs
+SGAAmbiental.API/.vs/
+SGAAmbiental.API/.vs/
+SGAmbiental.API/SGAmbiental.API/obj/
+SGAmbiental.API/SGAmbiental.API/SGAmbiental.API.csproj.user
+
+# Common node modules locations
+/node_modules
+/wwwroot/node_modules
+
+
+*.suo
+
+# End of https://www.gitignore.io/api/dotnetcore
