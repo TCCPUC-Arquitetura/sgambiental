@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Cors;
 
 namespace SGAmbiental.API
 {
@@ -26,6 +27,8 @@ namespace SGAmbiental.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -37,7 +40,9 @@ namespace SGAmbiental.API
             }
 
             app.UseHttpsRedirection();
-
+            
+            app.UseCors(option => option.AllowAnyOrigin()); 
+                        
             app.UseRouting();
 
             app.UseAuthorization();
