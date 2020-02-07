@@ -1,0 +1,26 @@
+[
+    {
+      "id": "1",
+      "name" : "aut1",
+       "oreType": "auts",
+       "mining": "kd"
+    },
+    {
+      "id": "2",
+      "name" : "aut1",
+       "oreType": "auts",
+       "mining": "kd"
+    },
+    {
+      "id": "3",
+      "name" : "aut1",
+       "oreType": "auts",
+       "mining": "kd"
+    },
+    {
+      "id": "4",
+      "name" : "aut1",
+       "oreType": "auts",
+       "mining": "kd"
+    }
+  ]
