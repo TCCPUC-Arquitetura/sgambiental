@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="demo">
+<head>
+<title>Cadastro de Empresas</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+<div ng-controller="Cadastro">
+<h1>Empresas</h1>
+	<table>
+		<tr ng-repeat="empresa in empresas">
+			<td >{{empresa.nome}}</td>
+			<td >{{empresa.date}}</td>
+		</tr>
+	</table>
+
+
+</div>
+</body>
+</html>
+

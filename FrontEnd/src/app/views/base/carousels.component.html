@@ -1,0 +1,60 @@
+<div class="animated fadeIn">
+  
+  <div class="row">
+    <div class="container-fluid">
+      <div class="card">
+        <div class="card-header">
+          <strong>Pesquisar Zona de Mineração</strong>
+        </div>
+        <form [formGroup] = "searchForm" (ngSubmit)="onSubmit(searchForm.value)" >
+
+        <div class="card-body">
+            
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">Identificação</label>
+              <div class="col-md-9">
+                <input type="text" id="text-input" name="text-input" formControlName = "id" class="form-control" >
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">Nome</label>
+              <div class="col-md-9">
+                <input type="text" id="text-input" name="text-input" formControlName = "name" class="form-control" >
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="text-input">Tipo de Minério</label>
+              <div class="col-md-9">
+                <input type="text" id="text-input" name="text-input" formControlName = "oreType"class="form-control" >
+              </div>
+            </div>
+                                  
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-primary"><i class="fa fas fa-search"></i> Pesquisar</button>
+        </div>
+      </form>
+      </div>
+   
+
+      <table class="table table-bordered  table-striped table-light">
+        <thead >
+          <tr>
+            <th scope="col">Identificação</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Tipo de Minério</th>
+            <th scope="col">Lavra</th>
+          </tr>
+        </thead>
+        <tbody >
+          <tr *ngFor="let miningZone of miningZones | async">
+            <th scope="row">{{miningZone.id}}</th>
+            <td>{{miningZone.name}}</td>
+            <td>{{miningZone.oreType}}</td>
+            <td>{{miningZone.mining}}</td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+</div>
