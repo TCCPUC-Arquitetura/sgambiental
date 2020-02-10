@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-zona-mineracao',
-  templateUrl: './zona-mineracao.component.html',
-  styleUrls: ['./zona-mineracao.component.css']
+  selector: "app-zona-mineracao",
+  templateUrl: "./zona-mineracao.component.html",
+  styleUrls: ["./zona-mineracao.component.css"]
 })
 export class ZonaMineracaoComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
