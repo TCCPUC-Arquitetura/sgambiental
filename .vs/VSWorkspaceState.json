@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\FrontEnd"
+    "\\FrontEnd",
+    "\\FrontEnd\\dist",
+    "\\FrontEnd\\src\\app"
   ],
-  "SelectedNode": "\\FrontEnd",
+  "SelectedNode": "\\FrontEnd\\src",
   "PreviewInSolutionExplorer": false
 }
