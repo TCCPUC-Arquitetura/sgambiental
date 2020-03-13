@@ -1,0 +1,85 @@
+<div class="animated fadeIn">
+  
+  <div class="row">
+    <div class="container-fluid">
+      <div class="card">
+        <div class="card-header">
+          <strong>Zona de Mineração</strong>
+        </div>
+        <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)" class="form-horizontal">
+
+        <div class="card-body">
+            
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="identificacao">Identificação</label>
+              <div class="col-md-9">
+                <input type="text" id="identificação"  formControlName="id" name="text-input" class="form-control" >
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="nome">Nome</label>
+              <div class="col-md-9">
+                <input type="text" id="nome" name="text-input" formControlName="name" class="form-control" >
+              </div>
+            </div>
+           
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="tipo-minerio">Tipo de Minério</label>
+              <div class="col-md-9">
+                <input type="text" id="tipo-minerio" name="tipo-minerio" formControlName="oreType" class="form-control" >
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="mining">Lavra</label>
+              <div class="col-md-9">
+                <select  id="mining" name="mining" class="form-control" formControlName="mining"   >
+                  <option *ngFor="let miningType of miningTypes" >{{miningType}}</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="area">Área</label>
+              <div class="col-md-9">
+                <input type="text" id="area" name="area" formControlName="area" class="form-control" >
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="tipo-processamento">Tipo de Processamento</label>
+              <div class="col-md-9">
+                <select  id="tipo-processamento" name="proccessingType" formControlName="processingType" class="form-control" >
+                  <option *ngFor="let processingType of processingTypes">{{processingType}}</option>
+                </select>
+              </div>
+            </div>
+            
+             
+            <div class="form-group row">
+              <label class="col-md-3 col-form-label" for="latitude">Latitude</label>
+
+              <div class="col-md-9">
+                <input type="text" id="latitude" name="Latitude" formControlName="latitude" class="form-control" >
+              </div> 
+          </div>
+
+          <div class="form-group row">
+            <label class="col-md-3 col-form-label" for="longitude">Longitude</label>
+
+            <div class="col-md-9">
+              <input type="text" id="longitude" name="Longitude" formControlName="longitude" class="form-control" >
+            </div> 
+        </div>
+
+          <agm-map [latitude]="checkoutForm.value.latitude" [zoom]="zoom" [longitude]="checkoutForm.value.longitude">
+            <agm-marker  [latitude]="checkoutForm.value.latitude" [longitude]="checkoutForm.value.longitude"></agm-marker>
+          </agm-map>
+
+        </div>
+        <div class="card-footer">
+          <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o" ></i> Salvar</button>
+          <button type="button" class="btn btn-sm btn-danger" (click)="reset()"><i class="fa fa-ban"></i> Apagar</button>
+        </div>
+      </form>
+      </div>
+     
+
+</div>

@@ -1,26 +1,36 @@
 [
     {
-      "id": "1",
-      "name" : "aut1",
-       "oreType": "auts",
-       "mining": "kd"
+      "id": 0,
+      "name" : "Vale",
+      "location": "12133",
+      "oreType": "aluminio",
+      "mining": "céu aberto",
+      "area": "15354",
+      "processingType": "umido",
+      "latitude":  -6.32897,
+      "longitude": -50.5942594
     },
     {
-      "id": "2",
-      "name" : "aut1",
-       "oreType": "auts",
-       "mining": "kd"
+      "id": 1,
+      "name" : "Vale",
+      "location": "12133",
+      "oreType": "ferro",
+      "mining": "subterranea",
+      "area": "15354",
+      "processingType": "seco",
+      "latitude":  -20.167030,
+      "longitude": -44.021588   
     },
     {
-      "id": "3",
-      "name" : "aut1",
-       "oreType": "auts",
-       "mining": "kd"
-    },
-    {
-      "id": "4",
-      "name" : "aut1",
-       "oreType": "auts",
-       "mining": "kd"
+      "id": 2,
+      "name" : "Vale",
+      "location": "12133",
+      "oreType": "bauxita",
+      "mining": "subterranea",
+      "area": "15354",
+      "processingType": "umido",
+      "latitude":  -20.167030,
+      "longitude": -44.021588   
     }
+    
   ]
