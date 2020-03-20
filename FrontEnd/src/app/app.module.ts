@@ -13,6 +13,10 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
 };
 
+//map api
+import { AgmCoreModule } from '@agm/core';
+
+
 import { AppComponent } from "./app.component";
 
 // Import containers
@@ -40,8 +44,6 @@ import { AppRoutingModule } from "./app.routing";
 import { BsDropdownModule } from "ngx-bootstrap/dropdown";
 import { TabsModule } from "ngx-bootstrap/tabs";
 import { ChartsModule } from "ng2-charts";
-import { ZonaMineracaoComponent } from "./views/zona-mineracao/zona-mineracao.component";
-import { TestComponent } from "./views/test/test.component";
 
 @NgModule({
   imports: [
@@ -58,7 +60,10 @@ import { TestComponent } from "./views/test/test.component";
     TabsModule.forRoot(),
     ChartsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyA_GRu2pdnNTC6gRBBs1NT9OIp7gNXt800'
+    })
   ],
   declarations: [
     AppComponent,
@@ -67,8 +72,8 @@ import { TestComponent } from "./views/test/test.component";
     P500Component,
     LoginComponent,
     RegisterComponent,
-    ZonaMineracaoComponent,
-    TestComponent
+    
+ 
   ],
   providers: [
     {

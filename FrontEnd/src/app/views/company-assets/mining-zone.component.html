@@ -1,0 +1,88 @@
+
+<div class="animated fadeIn">
+  
+    <div class="row">
+      <div class="container-fluid">
+        <div class="card">
+          <div class="card-header">
+            <strong>Pesquisar Zona de Mineração</strong>
+          </div>
+          <form [formGroup] = "searchForm" (ngSubmit)="onSubmit(searchForm.value)" >
+  
+          <div class="card-body">
+              
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="text-input">Identificação</label>
+                <div class="col-md-9">
+                  <input type="text" id="text-input" name="text-input" formControlName = "id" class="form-control" >
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="text-input">Nome</label>
+                <div class="col-md-9">
+                  <input type="text" id="text-input" name="text-input" formControlName = "name" class="form-control" >
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="text-input">Tipo de Minério</label>
+                <div class="col-md-9">
+                  <input type="text" id="text-input" name="text-input" formControlName = "oreType"class="form-control" >
+                </div>
+              </div>
+              
+                                    
+          </div>
+          <div class="card-footer">
+            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fas fa-search"></i> Pesquisar</button>
+            <a type="button" class="btn btn-sm btn-primary" [routerLink]="['../mining-zone-create']" ><i class="fa far fa-file"></i> Novo</a>
+
+          </div>
+        </form>
+        </div>
+     
+  
+        <table class="table table-bordered  table-striped table-light">
+          <thead >
+            <tr>
+              <th scope="col">Identificação</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Tipo de Minério</th>
+              <th scope="col">Lavra</th>
+              <th scope="col">Ações</th>
+            </tr>
+          </thead>
+          <tbody >
+            <tr *ngFor="let miningZone of miningZones; index as miningZoneId" class="{{visibility}}" id="{{miningZoneId}}">
+              <th scope="row">{{miningZone.id}}</th>
+              <td>{{miningZone.name}}</td>
+              <td>{{miningZone.oreType}}</td>
+              <td>{{miningZone.mining}}</td>
+              <td><a type="button" class="btn btn-sm btn-primary" [routerLink]="['../mining-zones/' + miningZoneId]" ><i class="fa far fa-edit"></i></a>
+              <button type="button"  class="btn btn-sm btn-danger" data-toggle="modal" (click)="myModal.show()"  ><i class="fa fa-trash"></i></button>
+                
+              </td>
+              <div bsModal #myModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-danger" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Remover Zona de Mineração</h4>
+                      <button type="button" class="close" (click)="myModal.hide()" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Deseja remover a Zona de Mineração?&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" (click)="myModal.hide()">Fechar</button>
+                      <button type="button" class="btn btn-danger" (click)="toggleVisibility(miningZoneId); myModal.hide()">Apagar</button>
+                    </div>
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
+            </tr>
+            
+          </tbody>
+        </table>
+
+  </div>
