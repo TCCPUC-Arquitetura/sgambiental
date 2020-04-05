@@ -14,23 +14,29 @@ import { ProgressComponent } from './progress.component';
 import { TooltipsComponent } from './tooltips.component';
 import { NavbarsComponent } from './navbars/navbars.component';
 import {DamCreateComponent} from './dam-create/dam-create.component';
+import { ChooseDamComponent } from './choose-dam/choose-dam.component';
+import {MonitorDamComponent} from './monitor-dam/monitor-dam.component';
 
 const routes: Routes = [
   {
     path: '',
     data: {
-      title: 'Zona de Mineração'
+      title: 'Monitoramento de Barragens'
     },
     children: [
-      {
-        path: '',
-        redirectTo: 'carousels'
-      },
+    
       {
         path: 'cards',
         component: CardsComponent,
         data: {
-          title: 'Cards'
+          title: 'Leitura de Sensores / Barragem 1'
+        }
+      },
+      {
+        path: 'monitor-dam',
+        component: MonitorDamComponent,
+        data: {
+          title: 'Leitura de Sensores / Barragem 1'
         }
       },
       {
@@ -48,12 +54,27 @@ const routes: Routes = [
         }
       },
       {
-        path: 'switches',
+        path: '',
         component: SwitchesComponent,
         data: {
-          title: 'Switches'
+          title: 'Selecionar Barragem'
         }
       },
+      {
+        path: 'choose-dam-old',
+        component: SwitchesComponent,
+        data: {
+          title: 'Selecionar Barragem'
+        }
+      },
+    
+    {
+      path: 'choose-dam',
+      component: ChooseDamComponent,
+      data: {
+        title: 'Selecionar Barragem'
+      }
+    },
       {
         path: 'tables',
         component: TablesComponent,
