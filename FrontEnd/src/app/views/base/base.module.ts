@@ -51,6 +51,10 @@ import { BaseRoutingModule } from './base-routing.module';
 import {HttpClientModule} from '@angular/common/http';
 import { TestsComponent } from './tests/tests.component';
 import { DamCreateComponent } from './dam-create/dam-create.component';
+import { AgmCoreModule } from '@agm/core';
+import { ChooseDamComponent } from './choose-dam/choose-dam.component';
+import { MonitorDamComponent } from './monitor-dam/monitor-dam.component';
+
 
 @NgModule({
   imports: [
@@ -66,7 +70,10 @@ import { DamCreateComponent } from './dam-create/dam-create.component';
     ProgressbarModule.forRoot(),
     TooltipModule.forRoot(),
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyA_GRu2pdnNTC6gRBBs1NT9OIp7gNXt800'
+    })
   ],
   declarations: [
     CardsComponent,
@@ -82,7 +89,9 @@ import { DamCreateComponent } from './dam-create/dam-create.component';
     TooltipsComponent,
     NavbarsComponent,
     TestsComponent,
-    DamCreateComponent
+    DamCreateComponent,
+    ChooseDamComponent,
+    MonitorDamComponent
   ]
 })
 export class BaseModule { }

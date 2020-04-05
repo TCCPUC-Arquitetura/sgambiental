@@ -39,10 +39,35 @@ export const navItems: INavData[] = [
    {
     title: true,
     name: "Segurança e Comunicação"
+  },  
+  {
+    name: "Moradores",
+    url: "/base/choose-dam",
+    icon: "icon-puzzle"
+  },
+  {
+    name: "Alertas",
+    url: "/base/choose-dam",
+    icon: "icon-puzzle"
+  },
+  {
+    name: "Planos de Evacuação",
+    url: "/base/choose-dam",
+    icon: "icon-puzzle"
   },
   {
     title: true,
     name: "Monitoramento de Barragens"
+  },
+  {
+    name: "Leitura de Sensores",
+    url: "/base/choose-dam",
+    icon: "icon-puzzle"
+  },
+  {
+    name: "Ocorrências",
+    url: "/base/choose-dam",
+    icon: "icon-puzzle"
   },
   {
     title: true,
