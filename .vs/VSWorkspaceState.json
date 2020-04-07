@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\FrontEnd",
-    "\\FrontEnd\\dist",
-    "\\FrontEnd\\src\\app"
+    "\\SGAmbientalTCC"
   ],
-  "SelectedNode": "\\FrontEnd\\src",
+  "SelectedNode": "\\SGAmbientalTCC\\SGAmbientalTCC.sln",
   "PreviewInSolutionExplorer": false
 }
