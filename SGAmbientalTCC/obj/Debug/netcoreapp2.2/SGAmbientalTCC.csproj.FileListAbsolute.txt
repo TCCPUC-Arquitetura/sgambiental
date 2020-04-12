@@ -41,7 +41,6 @@ C:\TCC-Arquitetura\Tcc\Sgambiental\SGAmbientalTCC\bin\Debug\netcoreapp2.2\SGAmbi
 C:\TCC-Arquitetura\Tcc\Sgambiental\SGAmbientalTCC\bin\Debug\netcoreapp2.2\SGAmbientalTCC.dll
 C:\TCC-Arquitetura\Tcc\Sgambiental\SGAmbientalTCC\bin\Debug\netcoreapp2.2\SGAmbientalTCC.pdb
 C:\TCC-Arquitetura\Tcc\Sgambiental\SGAmbientalTCC\obj\Debug\netcoreapp2.2\SGAmbientalTCC.csprojAssemblyReference.cache
-C:\TCC-Arquitetura\Tcc\Sgambiental\SGAmbientalTCC\obj\Debug\netcoreapp2.2\SGAmbientalTCC.csproj.CoreCompileInputs.cache
 C:\TCC-Arquitetura\Tcc\Sgambiental\SGAmbientalTCC\obj\Debug\netcoreapp2.2\SGAmbientalTCC.RazorAssemblyInfo.cache
 C:\TCC-Arquitetura\Tcc\Sgambiental\SGAmbientalTCC\obj\Debug\netcoreapp2.2\SGAmbientalTCC.RazorAssemblyInfo.cs
 C:\TCC-Arquitetura\Tcc\Sgambiental\SGAmbientalTCC\obj\Debug\netcoreapp2.2\SGAmbientalTCC.AssemblyInfoInputs.cache
@@ -50,3 +49,4 @@ C:\TCC-Arquitetura\Tcc\Sgambiental\SGAmbientalTCC\obj\Debug\netcoreapp2.2\SGAmbi
 C:\TCC-Arquitetura\Tcc\Sgambiental\SGAmbientalTCC\obj\Debug\netcoreapp2.2\SGAmbientalTCC.dll
 C:\TCC-Arquitetura\Tcc\Sgambiental\SGAmbientalTCC\obj\Debug\netcoreapp2.2\SGAmbientalTCC.pdb
 C:\TCC-Arquitetura\Tcc\Sgambiental\SGAmbientalTCC\obj\Debug\netcoreapp2.2\SGAmbientalTCC.genruntimeconfig.cache
+C:\TCC-Arquitetura\Tcc\Sgambiental\SGAmbientalTCC\obj\Debug\netcoreapp2.2\SGAmbientalTCC.csproj.CoreCompileInputs.cache

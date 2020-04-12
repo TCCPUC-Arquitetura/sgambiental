@@ -26,7 +26,7 @@ namespace SGAmbientalTCC.Controllers
             bool credenciaisValidas = false;
             if (usuario != null && !String.IsNullOrWhiteSpace(usuario.UserID))
             {
-                var usuarioBase = usersDAO.Find(usuario.UserID);
+                var usuarioBase = usersDAO.Find(usuario.UserID, usuario.Password);
                 credenciaisValidas = (usuarioBase != null &&
                     usuario.UserID == usuarioBase.UserID &&
                     usuario.AccessKey == usuarioBase.AccessKey);
