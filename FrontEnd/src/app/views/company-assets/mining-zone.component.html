@@ -41,13 +41,13 @@
         </div>
      
   
-        <table class="table table-bordered  table-striped table-light">
+        <div class="table-responsive-sm">
+                  <table class="table table-sm table-bordered  table-striped table-light">
           <thead >
             <tr>
               <th scope="col">Identificação</th>
               <th scope="col">Nome</th>
               <th scope="col">Tipo de Minério</th>
-              <th scope="col">Lavra</th>
               <th scope="col">Ações</th>
             </tr>
           </thead>
@@ -56,7 +56,6 @@
               <th scope="row">{{miningZone.id}}</th>
               <td>{{miningZone.name}}</td>
               <td>{{miningZone.oreType}}</td>
-              <td>{{miningZone.mining}}</td>
               <td><a type="button" class="btn btn-sm btn-primary" [routerLink]="['../mining-zones/' + miningZoneId]" ><i class="fa far fa-edit"></i></a>
               <button type="button"  class="btn btn-sm btn-danger" data-toggle="modal" (click)="myModal.show()"  ><i class="fa fa-trash"></i></button>
                 
@@ -84,5 +83,6 @@
             
           </tbody>
         </table>
+      </div>
 
   </div>

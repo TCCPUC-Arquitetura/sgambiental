@@ -21,7 +21,7 @@ export class MiningZoneService {
   }
 
    getMiningZoneList(){
-    return this.client.get("https://8e3cd95b-967c-4075-a754-c3354b017cab.mock.pstmn.io/ativos/zonademineracao", this.httpOptions).pipe(map((data: any) => {
+    return this.client.get("https://eb9d517b-290d-488d-b77d-baef25f95a84.mock.pstmn.io/ativos/zonademineracao", this.httpOptions).pipe(map((data: any) => {
       return data;
    }));
    
