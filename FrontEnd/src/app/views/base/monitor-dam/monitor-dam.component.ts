@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-monitor-dam',
   templateUrl: './monitor-dam.component.html',
   styleUrls: ['./monitor-dam.component.css']
 })
-export class MonitorDamComponent implements OnInit {
+export class MonitorDamComponent implements OnInit, OnDestroy {
 
   
   max: number = 100;
@@ -47,6 +47,10 @@ export class MonitorDamComponent implements OnInit {
     this.showWarning = type === 'danger' || type === 'warning';
     this.dynamic = value;
     this.type = type;
+  }
+
+  ngOnInit(){
+
   }
 
   randomStacked(): void {
