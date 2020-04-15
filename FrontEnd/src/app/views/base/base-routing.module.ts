@@ -16,6 +16,8 @@ import { NavbarsComponent } from './navbars/navbars.component';
 import {DamCreateComponent} from './dam-create/dam-create.component';
 import { ChooseDamComponent } from './choose-dam/choose-dam.component';
 import {MonitorDamComponent} from './monitor-dam/monitor-dam.component';
+import { OcurrencesComponent } from './ocurrences/ocurrences.component';
+import { OcurrencesCreateComponent } from './ocurrences/ocurrences-create.component';
 
 const routes: Routes = [
   {
@@ -76,10 +78,17 @@ const routes: Routes = [
       }
     },
       {
-        path: 'tables',
-        component: TablesComponent,
+        path: 'ocurrences',
+        component: OcurrencesComponent,
         data: {
-          title: 'Tables'
+          title: 'Ocorrências'
+        }
+      },
+      {
+        path: 'ocurrences-create',
+        component: OcurrencesCreateComponent,
+        data: {
+          title: 'Criação Ocorrências'
         }
       },
       {
