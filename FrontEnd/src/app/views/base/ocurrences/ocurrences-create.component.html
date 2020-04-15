@@ -1,0 +1,84 @@
+<div class="animated fadeIn">
+  
+    <div class="row">
+      <div class="container-fluid">
+        <div class="card">
+          <div class="card-header">
+            <strong>Zona de Mineração</strong>
+          </div>
+          <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)" class="form-horizontal">
+  
+          <div class="card-body">
+              
+           
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="nome">Data</label>
+                <div class="col-md-9">
+                  <input type="date" id="nome" name="text-input" formControlName="name" class="form-control"  autocomplete="off" >
+                </div>
+              </div>
+             
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="tipo-minerio">Latitude</label>
+                <div class="col-md-9">
+                  <input type="text" id="tipo-minerio" name="tipo-minerio" formControlName="oreType" class="form-control"   autocomplete="off">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="tipo-minerio">Longitude</label>
+                <div class="col-md-9">
+                  <input type="text" id="tipo-minerio" name="tipo-minerio" formControlName="oreType" class="form-control"   autocomplete="off">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="tipo-minerio">Descrição</label>
+                <div class="col-md-9">
+                  <textarea type="text" id="tipo-minerio" name="tipo-minerio" formControlName="oreType" class="form-control"   autocomplete="off"></textarea>
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="tipo-minerio">Tipo</label>
+                <div class="col-md-9">
+                    <select id="select1" name="select1"  class="form-control">
+                        <option value="0">Por favor, selecione</option>
+                        <option value="1">Tremor de Terra</option>
+                        <option value="2">Quedas, Tombamentos e rolamentos</option>
+                        <option value="3">Deslizamentos</option>
+                        <option value="4">Corridas de Massa</option>
+                       <option value="5">Erosão de Margem Fluvial</option>
+
+                    </select>                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="mining">Nivel</label>
+                <div class="col-md-9">
+                    <select id="select1" name="select1"  class="form-control">
+                        <option value="0">Por favor, selecione</option>
+                        <option value="1">Vigilância</option>
+                        <option value="2">Observação</option>
+                        <option value="3">Atenção</option>
+                        <option value="4">Alerta</option>
+                       <option value="5">Alerta  Máximo</option>
+
+                    </select>
+                </div>
+              </div>
+            
+
+      
+                        
+           
+          </div>
+          <div class="card-footer">
+            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o" ></i> Salvar</button>
+            <button type="button" class="btn btn-sm btn-danger" (click)="reset()"><i class="fa fa-ban"></i> Limpar</button>
+          </div>
+        </form>
+        </div>
+       
+  
+        
+  </div>
+  

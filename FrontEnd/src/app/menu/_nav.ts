@@ -66,7 +66,7 @@ export const navItems: INavData[] = [
   },
   {
     name: "Ocorrências",
-    url: "/base/choose-dam",
+    url: "/base/ocurrences",
     icon: "icon-puzzle"
   },
   {

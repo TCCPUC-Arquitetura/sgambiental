@@ -54,6 +54,8 @@ import { DamCreateComponent } from './dam-create/dam-create.component';
 import { AgmCoreModule } from '@agm/core';
 import { ChooseDamComponent } from './choose-dam/choose-dam.component';
 import { MonitorDamComponent } from './monitor-dam/monitor-dam.component';
+import { OcurrencesComponent } from './ocurrences/ocurrences.component';
+import { OcurrencesCreateComponent } from './ocurrences/ocurrences-create.component';
 
 
 @NgModule({
@@ -91,7 +93,9 @@ import { MonitorDamComponent } from './monitor-dam/monitor-dam.component';
     TestsComponent,
     DamCreateComponent,
     ChooseDamComponent,
-    MonitorDamComponent
+    MonitorDamComponent,
+    OcurrencesComponent,
+    OcurrencesCreateComponent
   ]
 })
 export class BaseModule { }
