@@ -9,8 +9,11 @@
     "paths": {
       "@angular/*": [
         "../node_modules/@angular/*"
-      ]
-    }
+      ],
+      "@app/*": ["/app/*"],
+      "@environments/*": ["environments/*"]
+  }
+    
   },
   "angularCompilerOptions": {
     "enableIvy": false
