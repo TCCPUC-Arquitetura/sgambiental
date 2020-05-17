@@ -76,11 +76,7 @@ export const routes: Routes = [
             m => m.DashboardModule
           )
       },
-      {
-        path: "icons",
-        loadChildren: () =>
-          import("./views/icons/icons.module").then(m => m.IconsModule)
-      },
+   
       {
         path: "notifications",
         loadChildren: () =>
@@ -102,6 +98,11 @@ export const routes: Routes = [
         path: "company-assets",
         loadChildren: () =>
           import("./views/company-assets/company-assets.module").then(m => m.CompanyAssetsModule)
+      },
+      {
+        path: "securityandcomunication",
+        loadChildren: () =>
+          import("./views/securityandcomunication/securityandcomunication.module").then(m => m.SecurityandcomunicationModule)
       }
     ]
   },

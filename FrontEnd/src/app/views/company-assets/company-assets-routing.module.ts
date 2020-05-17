@@ -3,6 +3,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { MiningZoneComponent } from './mining-zone.component';
 import { MiningZoneCreateComponent } from './mining-zone-create.component';
 import { MiningZoneDetailsComponent } from './mining-zone-details.component';
+import {EquipmentComponent} from './equipment.component';
+import {EquipmentCreateComponent} from './equipment-create.component';
+
 
 const routes: Routes = [
 
@@ -36,7 +39,22 @@ const routes: Routes = [
         data: {
           title: 'Editar Zona de Mineração'
         }
+      },
+      {
+        path: 'equipment',
+        component: EquipmentComponent,
+        data: {
+          title: 'Equipamentos'
+        }
+      },
+      {
+        path: 'equipment-create',
+        component: EquipmentCreateComponent,
+        data: {
+          title: 'Criar Equipamentos'
+        }
       }
+      
     
     ]
   }

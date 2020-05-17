@@ -39,6 +39,9 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import {HttpClientModule} from '@angular/common/http';
 import { MiningZoneCreateComponent } from './mining-zone-create.component';
 import { MiningZoneDetailsComponent } from './mining-zone-details.component';
+import {EquipmentComponent} from './equipment.component';
+import {EquipmentCreateComponent} from './equipment-create.component';
+
 import { AgmCoreModule } from '@agm/core';
 
 
@@ -46,7 +49,7 @@ import { AgmCoreModule } from '@agm/core';
 
 
 @NgModule({
-  declarations: [MiningZoneComponent, MiningZoneCreateComponent, MiningZoneDetailsComponent],
+  declarations: [MiningZoneComponent, MiningZoneCreateComponent, MiningZoneDetailsComponent, EquipmentComponent, EquipmentCreateComponent],
   imports: [
     CommonModule,
     CompanyAssetsRoutingModule,

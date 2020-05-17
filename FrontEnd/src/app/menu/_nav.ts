@@ -10,28 +10,7 @@ export const navItems: INavData[] = [
     url: "/company-assets/mining-zone",
     icon: "icon-puzzle"
   },
-  {
-    name: "Barragens",
-    url: "/buttons",
-    icon: "icon-cursor"
-  },
-  {
-    name: "Equipamentos",
-    url: "/icons",
-    icon: "icon-pie-chart",
-    children: [
-      {
-        name: "Incluir",
-        url: "/icons/coreui-icons",
-        icon: "icon-cursor"
-      },
-      {
-        name: "Pesquisar",
-        url: "/icons/flags",
-        icon: "icon-cursor"
-      }
-    ]
-  },
+
   {
     title: true,
     name: "Processos Minerários"
@@ -42,17 +21,12 @@ export const navItems: INavData[] = [
   },  
   {
     name: "Moradores",
-    url: "/base/choose-dam",
-    icon: "icon-puzzle"
-  },
-  {
-    name: "Alertas",
-    url: "/base/choose-dam",
+    url: "/securityandcomunication/affected",
     icon: "icon-puzzle"
   },
   {
     name: "Planos de Evacuação",
-    url: "/base/choose-dam",
+    url: "/securityandcomunication/evacuationplan",
     icon: "icon-puzzle"
   },
   {
