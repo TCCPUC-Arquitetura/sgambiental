@@ -17,20 +17,8 @@ export const navItems: INavData[] = [
   },
   {
     name: "Equipamentos",
-    url: "/icons",
-    icon: "icon-pie-chart",
-    children: [
-      {
-        name: "Incluir",
-        url: "/icons/coreui-icons",
-        icon: "icon-cursor"
-      },
-      {
-        name: "Pesquisar",
-        url: "/icons/flags",
-        icon: "icon-cursor"
-      }
-    ]
+    url: "/company-assets/equipment",
+    icon: "icon-pie-chart"
   },
   {
     title: true,

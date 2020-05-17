@@ -95,7 +95,7 @@ import { OcurrencesCreateComponent } from './ocurrences/ocurrences-create.compon
     ChooseDamComponent,
     MonitorDamComponent,
     OcurrencesComponent,
-    OcurrencesCreateComponent
+    OcurrencesCreateComponent,
   ]
 })
 export class BaseModule { }

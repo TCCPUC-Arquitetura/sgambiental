@@ -76,11 +76,7 @@ export const routes: Routes = [
             m => m.DashboardModule
           )
       },
-      {
-        path: "icons",
-        loadChildren: () =>
-          import("./views/icons/icons.module").then(m => m.IconsModule)
-      },
+   
       {
         path: "notifications",
         loadChildren: () =>
