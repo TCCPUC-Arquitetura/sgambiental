@@ -1,0 +1,30 @@
+<div class="animated fadeIn">
+  
+    <div class="row">
+      <div class="container-fluid">
+       
+       <div class="table-responsive-sm">
+        <table class="table table-bordered  table-striped table-light">
+          <thead >
+            <tr>
+              <th scope="col">Identificação</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Alerta</th>
+            
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr  *ngFor="let evacuationPlan of evacuationPlanList">
+              <th scope="row">{{evacuationPlan.id}}</th>
+              <td>{{evacuationPlan.name}}</td>
+              <td>SMS</td>
+         
+            </tr>
+         
+          </tbody>
+        </table>
+       </div>
+  
+  </div>
+  

@@ -98,6 +98,11 @@ export const routes: Routes = [
         path: "company-assets",
         loadChildren: () =>
           import("./views/company-assets/company-assets.module").then(m => m.CompanyAssetsModule)
+      },
+      {
+        path: "securityandcomunication",
+        loadChildren: () =>
+          import("./views/securityandcomunication/securityandcomunication.module").then(m => m.SecurityandcomunicationModule)
       }
     ]
   },
