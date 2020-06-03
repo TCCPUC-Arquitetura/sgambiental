@@ -28,18 +28,12 @@ const routes: Routes = [
     children: [
     
     
-      {
-        path: 'cards',
-        component: CardsComponent,
-        data: {
-          title: 'Leitura de Sensores / Barragem 1'
-        }
-      },
+  
       {
         path: 'monitor-dam',
         component: MonitorDamComponent,
         data: {
-          title: 'Leitura de Sensores / Barragem 1'
+          title: 'B1'
         }
       },
       {
@@ -58,19 +52,9 @@ const routes: Routes = [
       },
       {
         path: '',
-        component: SwitchesComponent,
-        data: {
-          title: 'Selecionar Barragem'
-        }
+        redirectTo:'choose-dam'
       },
-      {
-        path: 'choose-dam-old',
-        component: SwitchesComponent,
-        data: {
-          title: 'Selecionar Barragem'
-        }
-      },
-    
+        
     {
       path: 'choose-dam',
       component: ChooseDamComponent,

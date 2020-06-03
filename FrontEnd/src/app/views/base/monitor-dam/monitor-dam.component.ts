@@ -1,9 +1,18 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
+import { SensorService } from './sensorsservice.service';
+import { VibrationData } from './vibrationdata';
+import { WaterSensorData } from './watersensordata';
+import {AsyncPipe} from '@angular/common'
+import { WeatherService } from './weather.service';
+import { WeatherData } from './weatherdata';
+import {BehaviorSubject} from 'rxjs';
+
 
 @Component({
   selector: 'app-monitor-dam',
   templateUrl: './monitor-dam.component.html',
-  styleUrls: ['./monitor-dam.component.css']
+  styleUrls: ['./monitor-dam.component.css'],
+  providers: [SensorService],
 })
 export class MonitorDamComponent implements OnInit, OnDestroy {
 
@@ -17,10 +26,16 @@ export class MonitorDamComponent implements OnInit, OnDestroy {
 
   timer: any = null;
   buttonCaption: string = 'Start';
+  vibrationDataList: VibrationData[];
+  waterSensorData: WaterSensorData;
+   weatherData: WeatherData;
+   value:any;
+  constructor(
 
-  constructor() {
-    this.random();
-    this.randomStacked();
+    private sensorsService: SensorService,
+    private weatherService: WeatherService
+  ) {
+
   }
 
   ngOnDestroy() {
@@ -30,27 +45,41 @@ export class MonitorDamComponent implements OnInit, OnDestroy {
     // console.log(`onDestroy`, this.timer);
   }
 
-  random(): void {
-    const value = 100;
-    let type: string;
 
-    if (value < 25) {
-      type = 'success';
-    } else if (value < 50) {
-      type = 'info';
-    } else if (value < 75) {
-      type = 'warning';
-    } else {
-      type = 'danger';
-    }
 
-    this.showWarning = type === 'danger' || type === 'warning';
-    this.dynamic = value;
-    this.type = type;
+  setDynamic(num):number{
+    this.dynamic = num
+    
+
+
+    this.showWarning = true;
+    return this.dynamic;
   }
 
   ngOnInit(){
 
+    this.sensorsService.getVibrationSensorData().subscribe((data:any):void=>{
+      this.vibrationDataList = data;
+    })
+
+   
+this.getWaterSensorData()
+
+    this.weatherService.getWeatherData().subscribe((data:WeatherData)=>this.weatherData={
+      name: data['name'],
+      state: data['state'],
+      data: data['data']
+    })
+
+    
+   
+  }
+
+
+  getWaterSensorData(){
+   return  this.sensorsService.getWaterSensorData().subscribe((data: WaterSensorData)=> this.waterSensorData = {
+      level: data.level
+    })
   }
 
   randomStacked(): void {
@@ -67,16 +96,6 @@ export class MonitorDamComponent implements OnInit, OnDestroy {
         label: value + ' %'
       });
     }
-  }
-
-  randomize(): void {
-    if (this.timer) {
-      clearInterval(this.timer);
-      this.timer = null;
-    } else {
-      this.timer = setInterval(() => this.randomStacked(), 2000);
-    }
-    this.buttonCaption = this.timer ? 'Stop' : 'Start';
   }
 
 }

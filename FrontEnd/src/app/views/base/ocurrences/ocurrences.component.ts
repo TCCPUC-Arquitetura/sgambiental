@@ -4,7 +4,9 @@ import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 //import { MiningZone } from './mining-zone';
 import {ViewChild} from '@angular/core';
 import {ModalDirective} from 'ngx-bootstrap/modal';
-import { min } from 'rxjs/operators';
+import { min, map } from 'rxjs/operators';
+import { OcurrencesService } from './ocurrences.service';
+import { Ocurrence } from './ocurrence';
 
 @Component({
   selector: 'app-ocurrences',
@@ -19,10 +21,11 @@ export class OcurrencesComponent implements OnInit {
   change: string;
   visibility: string;
   @ViewChild('myModal') public myModal: ModalDirective;
+  ocurrenceList: Ocurrence[];
 
   constructor(
     private formBuilder: FormBuilder,
-
+    private ocurrenceService: OcurrencesService
 
   ) {
 
@@ -35,9 +38,10 @@ export class OcurrencesComponent implements OnInit {
   }
 
   ngOnInit(): void {
- //   this.miningZoneService.getMiningZoneList().subscribe((data: any): void => {
-   //   this.miningZones = data;
-    //})
+
+    this.ocurrenceService.getOcurrencesList().subscribe(((data:any):void=>{
+      this.ocurrenceList = data;
+    }))
 
   }
 
