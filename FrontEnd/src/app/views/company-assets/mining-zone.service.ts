@@ -21,13 +21,19 @@ export class MiningZoneService {
   }
 
    getMiningZoneList(){
-    return this.client.get("https://eb9d517b-290d-488d-b77d-baef25f95a84.mock.pstmn.io/ativos/zonademineracao", this.httpOptions).pipe(map((data: any) => {
+    return this.client.get("https://eb9d517b-290d-488d-b77d-baef25f95a84.mock.pstmn.io/apiativos/zonademineracao", this.httpOptions).pipe(map((data: any) => {
       return data;
    }));
    
+
+  
   }
 
   save(miningZoneData: any) {
     console.warn(miningZoneData)
+  }
+
+  addMiningZone(miningZone:MiningZone){
+    this.client.post('https://907e3d5e-47ba-4503-a394-6fe53c2615a9.mock.pstmn.io/apiativos/zonademineracao',miningZone,this.httpOptions );
   }
 }

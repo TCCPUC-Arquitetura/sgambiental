@@ -19,7 +19,7 @@ export class OcurrencesService {
   ) { }
 
     getOcurrencesList(){
-      return this.client.get('https://907e3d5e-47ba-4503-a394-6fe53c2615a9.mock.pstmn.io/api/monitoramentobarragemjson/ocorrencias', this.httpOptions).pipe(map((data:any)=>{
+      return this.client.get('https://907e3d5e-47ba-4503-a394-6fe53c2615a9.mock.pstmn.io/apimonitoramento/ocorrencias', this.httpOptions).pipe(map((data:any)=>{
         return data;
       }))
     }

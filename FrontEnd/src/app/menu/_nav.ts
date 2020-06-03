@@ -34,7 +34,7 @@ export const navItems: INavData[] = [
     name: "Monitoramento de Barragens"
   },
   {
-    name: "Leitura de Sensores",
+    name: "Monitorar Sensores",
     url: "/base/choose-dam",
     icon: "icon-puzzle"
   },
