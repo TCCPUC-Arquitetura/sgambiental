@@ -59,17 +59,7 @@ export const routes: Routes = [
         loadChildren: () =>
           import("./views/base/base.module").then(m => m.BaseModule)
       },
-      {
-        path: "buttons",
-        loadChildren: () =>
-          import("./views/buttons/buttons.module").then(m => m.ButtonsModule)
-      },
-      {
-        path: "charts",
-        loadChildren: () =>
-          import("./views/chartjs/chartjs.module").then(m => m.ChartJSModule)
-      },
-      {
+     {
         path: "dashboard",
         loadChildren: () =>
           import("./views/dashboard/dashboard.module").then(
@@ -77,23 +67,7 @@ export const routes: Routes = [
           )
       },
    
-      {
-        path: "notifications",
-        loadChildren: () =>
-          import("./views/notifications/notifications.module").then(
-            m => m.NotificationsModule
-          )
-      },
-      {
-        path: "theme",
-        loadChildren: () =>
-          import("./views/theme/theme.module").then(m => m.ThemeModule)
-      },
-      {
-        path: "widgets",
-        loadChildren: () =>
-          import("./views/widgets/widgets.module").then(m => m.WidgetsModule)
-      },
+    
       {
         path: "company-assets",
         loadChildren: () =>
